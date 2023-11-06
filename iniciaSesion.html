@@ -18,14 +18,14 @@
       <img class="card-img-top" src="img/logoInicio.jpg" align="center" width="250" height="350" alt="Card image cap">
       <div class="card-body">
         <h5 class="card-title">INICIO DE SESIÓN</h5>
-        <?php
+       <!-- <?php
           if(isset($_GET['error'])){
             $e=$_GET['error'];
             if($e==1){
               echo "<font color='red'>Usuario o Contraseña incorrecta</font>";
             }
           }
-        ?>
+        ?>-->
         <p class="card-text">
 
           <form name="form" method="post" id="form" action="phplogin/login.php" class="form-horizontal">
@@ -66,13 +66,13 @@
       </div>
     </div>
   </div>
-<?php
+<!--<?php
 }
 else 
 {
   require_once('index.php'); 
 }
- ?>
+ ?-->
 </body>
     <!--El orden del script es importante este scrip coloca fa fas principales
     <script src="layouts/estilos/vendor/bootstrap/js/all.js"></script>-->
