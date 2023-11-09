@@ -12,9 +12,13 @@
     <link href="estilos/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <!--añadiendo estilo css-->
     <link href="estilos/css/agency.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/css/style.css">
 
 </head>
 <body>
+
+<header>
+  <!--Menu Horizontal-->
 	<div class="col-12">
 		<nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
       <div class="container">
@@ -24,7 +28,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ml-auto">
             <li class="nav-item">
-              <a class="nav-link"  style="font-size: 18px;" href="iniciaSesion.html" ><i class="fa fa-sign-in""></i>&nbsp;&nbsp;Iniciar Sesion</a>
+              <a class="nav-link"  style="font-size: 18px;" href="iniciaSesion.html" ><i class="fa fa-sign-in"></i>&nbsp;&nbsp;Iniciar Sesion</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" style="font-size: 18px;" href="modulos/Cliente/registro.html"><i class="fa fa-group"></i>&nbsp;&nbsp;Registrate</a>
@@ -34,15 +38,76 @@
       </div>
     </nav>		
 	</div>
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-12 col-sm-3	col-md-2	col-lg-2 col-xl-2">
+  <!--Swiper-->
+    <div class="swiper-container swiper-slider" data-loop="false" data-autoplay="5500" data-dragable="false">
+      <div class="swiper-wrapper text-center">
+        <div class="swiper-slide" data-slide-bg="img/carusel/1.jpg" data-preview-bg="images/background-01-1920x750.jpg">
+          <div class="swiper-caption swiper-parallax" data-speed="0.5" data-fade="true">
+            <div class="swiper-slide-caption">
+              <div class="container">
+                <div class="row justify-content-xl-center">
+                  <div class="col-xl-12">
+                    <div class="text-extra-big font-weight-bold font-italic text-uppercase" data-caption-animate="fadeInUp" data-caption-delay="300">CENTRO DEPORTIVO EVOLUTION</div>
+                  </div>
+                  <div class="col-xl-8 offset-top-10">
+                    <h5 class="hidden d-sm-block text-light" data-caption-animate="fadeInUp" data-caption-delay="500">
+                      Proporcionamos instalaciones que permitan a los participantes desarrollar sus habilidades en diferentes deportes y actividades físicas.
+                    </h5>
+                    <div class="offset-top-20 offset-sm-top-50"><a class="btn btn-danger btn-anis-effect" href="#inicio" data-waypoint-to="#welcome" data-caption-animate="fadeInUp" data-caption-delay="800"><span class="btn-text">Empezar Ya!</span></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide" data-slide-bg="img/carusel/5.jpg" data-preview-bg="images/background-02-1920x750.jpg">
+          <div class="swiper-caption swiper-parallax" data-speed="0.5" data-fade="true">
+            <div class="swiper-slide-caption">
+              <div class="container">
+                <div class="row justify-content-xl-center">
+                  <div class="col-xl-12">
+                    <div class="text-extra-big font-weight-bold font-italic text-uppercase" data-caption-animate="fadeInUp" data-caption-delay="300">CREA TU EQUIPO</div>
+                  </div>
+                  <div class="col-xl-8 offset-top-10">
+                    <h5 class="hidden d-sm-block text-light" data-caption-animate="fadeInUp" data-caption-delay="500"> Ten la oportunidad de conectarte a través del deporte, promovemos el trabajo en equipo, la cooperación y la construcción de relaciones sociales.</h5>
+                    <div class="offset-top-20 offset-sm-top-50"><a class="btn btn-danger btn-anis-effect" href="#retos" data-waypoint-to="#welcome" data-caption-animate="fadeInUp" data-caption-delay="800"><span class="btn-text">Empezar Ya!</span></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide" data-slide-bg="img/carusel/8.jpg" data-preview-bg="images/background-03-1920x750.jpg">
+          <div class="swiper-caption swiper-parallax" data-speed="0.5" data-fade="true">
+            <div class="swiper-slide-caption">
+              <div class="container">
+                <div class="row justify-content-xl-center">
+                  <div class="col-xl-12">
+                    <div class="text-extra-big font-weight-bold font-italic text-uppercase" data-caption-animate="fadeInUp" data-caption-delay="300">SAL DE LO COTIDIANO</div>
+                  </div>
+                  <div class="col-xl-8 offset-top-10">
+                    <h5 class="hidden d-sm-block text-light" data-caption-animate="fadeInUp" data-caption-delay="500">Proporcionamos Juegos de mesa, servicio de cafeteria y mucho mas, para que te relajes y disfrutes de tu tiempo libre al maximo </h5>
+                    <div class="offset-top-20 offset-sm-top-50"><a class="btn btn-danger btn-anis-effect" href="#cafeteria" data-waypoint-to="#welcome" data-caption-animate="fadeInUp" data-caption-delay="800"><span class="btn-text">Empezar Ya!</span></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button swiper-button-prev swiper-parallax mdi mdi-chevron-left"></div>
+      <div class="swiper-button swiper-button-next swiper-parallax mdi mdi-chevron-right"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </header>
+
+    <!--Menu Vertical-->
+			<div class="col-12 col-sm-3	col-md-2 col-lg-2 col-xl-2">
 				<!--no funciona en extra pequeño revisar preguntar-->
 				<section>
           <div class="row" >
             <nav class="nav navbar-expand-md" id="sideNav">
                 <div class="nav navbar-nav navbar-collapse" >    
-                    
                   <table>
                     <ul class="nav navbar-nav ">
                       <tr>
@@ -72,7 +137,7 @@
                            </button> 
                         </td>
                         <td>
-                            <a href="#about" id="tres"  class="nav-link navbar-text" >RETOS</a>
+                            <a href="#retos" id="tres"  class="nav-link navbar-text" >RETOS</a>
                         </td>
                       </tr>
                       <tr>
@@ -112,88 +177,95 @@
           </div>
           </section>
 			</div>
-			<div class="col-12 col-sm-9	col-md-10	col-lg-10 col-xl-10" >
-        <section id="inicio">
-          <div class="container">
-              <div class="col-lg-12 text-center">
-              <h1 class="section-heading">BIENVENIDO</h2>
-              <h1 class="section-heading text-uppercase">CENTRO DEPORTIVO Y CULTURAL EVOLUTION</h2>
-              <br>
-              <br>
-              <br>
-              <div class="card-deck">
-                <div class="card bg-warning" style="opacity: 0.8">
-                  <div class="card-body">
-                    <h5 class="card-title" style="color: #000000">Vision</h5>
-                    <p class="card-text" style="color: #000000" >Convertirnos en un modelo de organización dedicada al desarrollo del deporte sostenible social, innovadora e integradora, reconocida por la población en general.</p>
-              
-                </div>
-                </div>
-                <div class="card bg-warning" style="opacity: 0.8">
-                  <div class="card-body">
-                    <h5 class="card-title" style="color: #000000">Mision</h5>
-                    <p class="card-text" style="color: #000000">Impulsar y liderar la práctica deportiva, para contribuir a mejorar la salud y el bienestar de las personas.</p>
-                  </div>
-                </div>
-              </div>
+
+    <!--inicio-->
+      <section id="inicio" class="section-98 section-md-110 novi-background" data-preset='{"title":"Content block 1","category":"content","id":"content-block-1"}'>
+        <div class="container">
+          <div class="col-md-12 text-center">
+            <h3 class="animate-charcter"> Bienvenido</h3>
           </div>
-          <br>
-          <br>
-        </section>
-        <!-- Servicios-->
-      
+          <hr class="divider bg-red">
+        </div>
+      </section>
+
+    <!-- Servicios-->
         <section class="bg-light" id="servicios" role="tabpanel" aria-labelledby="list-home-list">
             <div class="container">
               <div class="row">
                 <div class="col-lg-12 text-center">
-                  <h2 class="section-heading text-uppercase">Servicios</h2>
-                  <h3 class="section-subheading text-muted">Se prestan los siguientes hambientes.</h3>
+                  <h2 class="section-heading text-uppercase">Nuestros Servicios</h2>
+                  <h3 class="section-subheading text-muted">¡Bienvenidos a Evolucionar! Esperamos que aprecie nuestros servicios y oportunidades que ofrecemos a nuestros clientes leales y potenciales.</h3>
                 </div>
               </div>
+
               <div class="row">
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                  <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
-                    <img class="img-fluid" src="img/ejemplo1.jpg" alt="">
-                  </a>
-                  <div class="portfolio-caption">
-                    <h4>Wally</h4>
-                    <p class="text-muted">2 Canchas de Wally Medidas: </p>
-                  </div>
+                    <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+                      <img class="img-fluid" src="img/ejemplo1.jpg" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+
+                      <div class="box-icon box-icon-bordered"><span class="novi-icon icon icon-outlined icon-sm icon-dark-filled mdi mdi-account-multiple"></span>
+                        <h4 class="text-danger offset-top-20">Wally</h4>
+                        <p>Tenemos a su disposicion 2 canchas de Wally, con las medidas oficiales, y la Altura de la Red adecuada tanto para Hombres, Mujeres y niños</p>
+                      </div>
+
+                    </div>
                 </div>
+
                 <div class="col-md-4 col-sm-6 portfolio-item">
                   <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
                     <img class="img-fluid" src="img/ejemplo3.jpg" alt="">
                   </a>
                   <div class="portfolio-caption">
-                    <h4>Goodminton</h4>
-                    <p class="text-muted">2 Canchas Medidas</p>
+
+                    <div class="box-icon box-icon-bordered"><span class="novi-icon icon icon-outlined icon-sm icon-dark-filled mdi mdi-account-multiple"></span>
+                      <h4 class="text-danger offset-top-20">Goodminton</h4>
+                      <p>Disponemos de las Raquetas y Pollitos Adecuados</p>
+                    </div>
+
                   </div>
                 </div>
+
                 <div class="col-md-4 col-sm-6 portfolio-item">
                   <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
                     <img class="img-fluid" src="img/ejemplo4.jpg" alt="">
                   </a>
                   <div class="portfolio-caption">
-                    <h4>Badminton</h4>
-                    <p class="text-muted">1 Cancha Medida</p>
+
+                    <div class="box-icon box-icon-bordered"><span class="novi-icon icon icon-outlined icon-sm icon-dark-filled mdi mdi-account-multiple"></span>
+                      <h4 class="text-danger offset-top-20">Badminton</h4>
+                      <p>Disponemos de las Raquetas y Pollitos Adecuados, Adecuamos la red A la medida Oficial</p>
+                    </div>
+
                   </div>
                 </div>
+
                 <div class="col-md-4 col-sm-6 portfolio-item">
                   <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
                     <img class="img-fluid" src="img/ejemplo5.jpg" alt="">
                   </a>
                   <div class="portfolio-caption">
-                    <h4>Ajedrez</h4>
-                    <p class="text-muted">5 Juegos </p>
+
+                    <div class="box-icon box-icon-bordered"><span class="novi-icon icon icon-outlined icon-sm icon-dark-filled mdi mdi-account-multiple"></span>
+                      <h4 class="text-danger offset-top-20">Juegos de Mesa</h4>
+                      <p>Disponemos de todo tipo de Juegos, para dos o mas personas, y con rango de Edades. Disponemos de ambientes Adecuados y comodos.</p>
+                    </div>
+
                   </div>
                 </div>
+
                 <div class="col-md-4 col-sm-6 portfolio-item">
                   <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
-                    <img class="img-fluid" src="img/ejemplo6.jpg" alt="">
+                    <img class="img-fluid " src="img/ejemplo6.jpg" alt="" >
                   </a>
                   <div class="portfolio-caption">
-                    <h4>Raquet</h4>
-                    <p class="text-muted">2 Canchas</p>
+
+                    <div class="box-icon box-icon-bordered"><span class="novi-icon icon icon-outlined icon-sm icon-dark-filled mdi mdi-account-multiple"></span>
+                      <h4 class="text-danger offset-top-20">Raquet</h4>
+                      <p>Disponemos de las Raquetas y Pelotitas Adecuadas, No hay inconvenientes si trae sus propio equipo, El costo es menor </p>
+                    </div>
+                    
                   </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
@@ -201,78 +273,89 @@
                     <img class="img-fluid" src="img/ejemplo2.jpg" alt="">
                   </a>
                   <div class="portfolio-caption">
-                    <h4>Ping Pong</h4>
-                    <p class="text-muted">2 Mesas</p>
+
+                    <div class="box-icon box-icon-bordered"><span class="novi-icon icon icon-outlined icon-sm icon-dark-filled mdi mdi-account-multiple"></span>
+                      <h4 class="text-danger offset-top-20">Ping Pong</h4>
+                      <p>Disponemos de las Raquetas y Pelotitas Adecuadas</p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </section>
           <!-- Retos -->
-           <section id="about">
+           <section id="retos">
             <div class="container">
               <div class="row">
                 <div class="col-lg-12 text-center">
                   <h2 class="section-heading text-uppercase" style="color: #ffffff" >Retos</h2>
-                  <h3 class="section-subheading text-muted" >Raiking de Mejores Equipos</h3>
+                  <span class="badge badge-warning">
+                  <h3 class=" text" >Raiking de Mejores Equipos - Wally</h3>
+                  </span>
                 </div>
               </div>
+              <hr class="divider bg-red">
               <div class="row">
                 <div class="col-lg-12">
+                  
                   <ul class="timeline">
+                    
                     <li>
                       <div class="timeline-image">
                         <img class="rounded-circle img-fluid" src="img/ejemplo15.jpg" alt="">
                       </div>
-                      <div class="timeline-panel" style="background-color: rgb(254,209,54,0.5)">
-                        <div class="timeline-heading" >
-                          <h4>Fecha de Ingreso 2009-2011</h4>
-                          <h4 class="subheading">Equipo Nombre</h4>
-                        </div>
-                        <div class="timeline-body">
-                          <p class="text-muted">A qui la Informacion del equipo </p>
+                      <div class="timeline-panel" >
+                        <div class="card" style="width: 18rem;">
+                          <img class="card-img-top" src="img/equipos/1.jpg" alt="Card image cap">
+                          <div class="card-body" style="background-color: rgb(254,209,54,0.5)">
+                            <h5 class="card-title">1er Lugar</h5>
+                            <p class="card-text">Partidos Ganados 6- Partidos Perdidos 3.</p>
+                          </div>
                         </div>
                       </div>
                     </li>
+
                     <li class="timeline-inverted">
                       <div class="timeline-image">
                         <img class="rounded-circle img-fluid" src="img/ejemplo16.jpg" alt="">
                       </div>
                       <div class="timeline-panel">
-                        <div class="timeline-heading">
-                          <h4>Fecha de Ingreso March 2011</h4>
-                          <h4 class="subheading">Equipo Nombre</h4>
-                        </div>
-                        <div class="timeline-body">
-                          <p class="text-muted">Aqui Informacion de equipo</p>
+                        <div class="card" style="width: 18rem;">
+                          <img class="card-img-top" src="img/equipos/2.jpg" alt="Card image cap">
+                          <div class="card-body" style="background-color: rgb(254,209,54,0.5)">
+                            <h5 class="card-title">2do Lugar</h5>
+                            <p class="card-text">Partidos Ganados 5- Partidos Perdidos 3.</p>
+                          </div>
                         </div>
                       </div>
                     </li>
+
                     <li>
                       <div class="timeline-image">
                         <img class="rounded-circle img-fluid" src="img/ejemplo20.jpg" alt="">
                       </div>
                       <div class="timeline-panel">
-                        <div class="timeline-heading">
-                          <h4>Fecha de Ingreso</h4>
-                          <h4 class="subheading">Nombre de Equipo</h4>
-                        </div>
-                        <div class="timeline-body">
-                          <p class="text-muted">Informacion de Equipo</p>
+                        <div class="card" style="width: 18rem;">
+                          <img class="card-img-top" src="img/equipos/3.jpg" alt="Card image cap">
+                          <div class="card-body" style="background-color: rgb(254,209,54,0.5)">
+                            <h5 class="card-title">3er Lugar</h5>
+                            <p class="card-text">Partidos Ganados 3- Partidos Perdidos 3.</p>
+                          </div>
                         </div>
                       </div>
                     </li>
+
                     <li class="timeline-inverted">
                       <div class="timeline-image">
                         <img class="rounded-circle img-fluid" src="img/ejemplo21.jpg" alt="">
                       </div>
                       <div class="timeline-panel">
-                        <div class="timeline-heading">
-                          <h4>Fecha de Ingreso July 2014</h4>
-                          <h4 class="subheading">Nombre de Equipo</h4>
-                        </div>
-                        <div class="timeline-body">
-                          <p class="text-muted">Informacion de Equipo</p>
+                        <div class="card" style="width: 18rem;">
+                          <img class="card-img-top" src="img/equipos/4.jpg" alt="Card image cap">
+                          <div class="card-body" style="background-color: rgb(254,209,54,0.5)">
+                            <h5 class="card-title">4to Lugar</h5>
+                            <p class="card-text">Partidos Ganados 3- Partidos Perdidos 4.</p>
+                          </div>
                         </div>
                       </div>
                     </li>
@@ -289,67 +372,64 @@
             </div>
           </section>
           <!-- Cafeteria -->
+          <hr class="divider bg-red">
           <section class="bg-light" id="cafeteria">
             <div class="container">
               <div class="row">
                 <div class="col-lg-12 text-center">
                   <h2 class="section-heading text-uppercase">Cafeteria</h2>
-                  <h3 class="section-subheading text-muted">Estos son los Productos que Ofrecemos.</h3>
+                  <h3 class="section-subheading text-muted">Mientras esperas un juego, Puedes disfrutas de la variedad de productos que te presentamos:.</h3>
                 </div>
               </div>
               <div class="row text-center">
                 <div class="col-md-4">
                   <img class="rounded-circle img-fluid" src="img/ejemplo10.jpg" >
-                  <h4 class="service-heading">Mencionar Categoria</h4>
-                  <p class="text-muted">Lista.</p>
+                  <h4 class="service-heading">Bebidas Calientes</h4>
+                  <p class="text-muted">Te, Mates, Cafe, Cocoa, otros..</p>
                 </div>
                 <div class="col-md-4">
                   <img class="rounded-circle img-fluid" src="img/ejemplo11.jpg" >
-                  <h4 class="service-heading">Mencionar Categoria</h4>
-                  <p class="text-muted">Lista..</p>
+                  <h4 class="service-heading">Bebidas Frias</h4>
+                  <p class="text-muted">jugos, Batidos</p>
                 </div>
                 <div class="col-md-4">
-                  <img class="rounded-circle img-fluid" src="img/ejemplo12.jpg" >
-                  <h4 class="service-heading">Mencionar Categoria</h4>
-                  <p class="text-muted">Lista..</p>
+                  <img class="rounded-circle img-fluid" src="img/ejemplo13.jpg" >
+                  <h4 class="service-heading">Sandwiches</h4>
+                  <p class="text-muted">Carne Fria, Huevo, Carne, Milanea..</p>
                 </div>
               </div>
               <p>
               <div class="row text-center">
                 <div class="col-md-4">
-                  <img class="rounded-circle img-fluid" src="img/ejemplo13.jpg" >
-                  <h4 class="service-heading">Mencionar Categoria</h4>
-                  <p class="text-muted">Lista.</p>
+                  <img class="rounded-circle img-fluid" src="img/ejemplo14.jpg" >
+                  <h4 class="service-heading">Sancks</h4>
+                  <p class="text-muted">Galletas, Postres, Dulces, Salados</p>
                 </div>
                 <div class="col-md-4">
-                  <img class="rounded-circle img-fluid" src="img/ejemplo14.jpg" >
-                  <h4 class="service-heading">Mencionar Categoria</h4>
-                  <p class="text-muted">Lista..</p>
+                  <img class="rounded-circle img-fluid" src="img/ejemplo12.jpg" >
+                  <h4 class="service-heading">Gaseosas</h4>
+                  <p class="text-muted">2l, 1l y demas</p>
                 </div>
-                <div class="col-md-4">
-                  <img class="rounded-circle img-fluid" src="img/ejemplo14.jpg" >
-                  <h4 class="service-heading">Mencionar Categoria</h4>
-                  <p class="text-muted">Lista..</p>
-                </div>
+                
               </div>
             </div>
-          </section>
-      
-      
-      
-          <!-- Promociones -->
-          <section id="Promociones">
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-12 text-center">
-                  <h2 class="section-heading text-uppercase">Promociones</h2>
-                  <h3 class="section-subheading text-muted">A qui publicaciones sobre Promociones.</h3>
-                </div>
-              </div>
-              
-            </div>
-          </section>
-      
+          </section> 
+    <!-- Promociones 
+      <section id="Promociones">
+      </section>
+    Opiniones 
+      <section id="Promociones">
+      </section>-->
+    <!-- Ubicacion -->
+      <section id="Ubicacion">
+        <div class="col-lg-12 text-center">
+        <h2  style="color: #ffffff" >Donde nos Encuentras?</h2>
+        <p style="text-align: center;">
+        <iframe aling="center" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15302.721720812027!2d-68.1936322!3d-16.4917115!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915edf99e0a64f7f%3A0x96e453e3ebda815d!2sRaquet%20Wally%20Evolution!5e0!3m2!1ses-419!2sbo!4v1699571330932!5m2!1ses-419!2sbo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
+      </p>
+      </div>
+      </section>
+      <hr class="divider bg-red">
           <!-- Contactanos -->
           <section class="bg-light" id="team">
             <div class="container">
@@ -359,12 +439,14 @@
                   <h3 class="section-subheading text-muted">Aqui Puedes Consultar cualquier duda sobre nuestros servicios.</h3>
                 </div>
               </div>
-              <div class="row">
-                <div class="col-sm-4">
+
+              <div class="row justify-content-center grid-group-lg offset-top-98">
+                <div class="col-md-8 col-lg-4">
+                  <!-- Icon Box Type 5-->
                   <div class="team-member">
                     <img class="mx-auto rounded-circle" src="img/user.png" alt="">
-                    <h4>Kay Garland</h4>
-                    <p class="text-muted">Lead Designer</p>
+                    <h4>Reyna Tito</h4>
+                    <p class="text-muted">Directora - Administradora</p>
                     <ul class="list-inline social-buttons">
                       <li class="list-inline-item">
                         <a href="#">
@@ -372,7 +454,7 @@
                         </a>
                       </li>
                       <li class="list-inline-item">
-                        <a href="#">
+                        <a href="https://www.facebook.com/reyna.tito.luque?locale=es_LA">
                           <i class="fa fa-facebook"></i>
                         </a>
                       </li>
@@ -384,23 +466,59 @@
                     </ul>
                   </div>
                 </div>
-
-                <div class="col-sm-4">
-                  
-
+                <div class="col-md-8 col-lg-4">
+                  <!-- Icon Box Type 5-->
+                  <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                    <div class="row align-items-stretch mb-5">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <!-- Name input-->
+                                <input class="form-control" id="name" type="text" placeholder="Tu nomre *" data-sb-validations="required" />
+                                <div class="invalid-feedback" data-sb-feedback="name:required">Un nombre es Requerido.</div>
+                            </div>
+                            <div class="form-group">
+                                <!-- Email address input-->
+                                <input class="form-control" id="email" type="email" placeholder="Tu correo*" data-sb-validations="required,email" />
+                                <div class="invalid-feedback" data-sb-feedback="email:required">Un Correo es requerido.</div>
+                                <div class="invalid-feedback" data-sb-feedback="email:email">El correo no es valido.</div>
+                            </div>
+                            <div class="form-group mb-md-0">
+                                <!-- Phone number input-->
+                                <input class="form-control" id="phone" type="tel" placeholder="Tu celular*" data-sb-validations="required" />
+                                <div class="invalid-feedback" data-sb-feedback="phone:required">Un Numero de celular es requerido.</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group form-group-textarea mb-md-0">
+                                <!-- Message input-->
+                                <textarea class="form-control" id="message" placeholder="Tu mensaje *" data-sb-validations="required"></textarea>
+                                <div class="invalid-feedback" data-sb-feedback="message:required">Un mensaje es requerido.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Submit success message-->
+                    <!---->
+                    <!-- This is what your users will see when the form-->
+                    <!-- has successfully submitted-->
+                    <div class="d-none" id="submitSuccessMessage">
+                        <div class="text-center text-white mb-3">
+                            <div class="fw-bolder">Subida de Formulario Existoso!</div>
+                            Para activar el formulario
+                            <br />
+                            <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                        </div>
+                    </div>
+                    <!-- Submit error message-->
+                    <!---->
+                    <!-- This is what your users will see when there is-->
+                    <!-- an error submitting the form-->
+                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error en enviar el mensaje!</div></div>
+                    <!-- Submit Button-->
+                    <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Enviar Mensaje</button></div>
+                </form>
                 </div>
-
-                <div class="col-sm-4">
-                  
-                  
-                </div>
-
               </div>
-              <div class="row">
-                <div class="col-lg-8 mx-auto text-center">
-                  <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
-                </div>
-              </div>
+
             </div>
           </section>
       
@@ -434,10 +552,8 @@
       
       
       
-              </div>
-            </div>
           </div>
-        </section>
+        </div>
 			</div>
 		</div>
 	</div>
@@ -450,7 +566,6 @@
             <div class="col-md-4 mb-5 mb-lg-0">
               <h4 class="text-uppercase mb-4">Nombre</h4>
               <p class="lead mb-0">Jhazmin zaida Luque Tito
-                <br>Sistema de Diseño Web</p>
             </div>
             <div class="col-md-4 mb-5 mb-lg-0">
               <h4 class="text-uppercase mb-4">Comunicate Mediante</h4>
@@ -505,5 +620,9 @@
     <script src="estilos/vendor/jquery-easing/jquery.easing.min.js"></script>
     <!-- Script para cambios-->
     <script src="estilos/js/agency.min.js"></script>	
+
+
+    <script src="estilos/js/core.min.js"></script>
+    <script src="estilos/js/script.js"></script>
 
 </html>

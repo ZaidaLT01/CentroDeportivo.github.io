@@ -70,7 +70,7 @@ section h3.section-subheading {
 }
 
 .btn-primary {
-  background-color: #fed136;
+  background-color: rgb(250, 203, 13);
   border-color: #fed136;
 }
 
@@ -106,6 +106,7 @@ img::-moz-selection {
   background-color: #212529;
 }
 
+
 #mainNav .navbar-toggler {
   font-size: 12px;
   right: 0;
@@ -136,7 +137,7 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #fed136;
+  color: #fef736;
 }
 
 @media (min-width: 992px) {
@@ -161,7 +162,7 @@ img::-moz-selection {
   #mainNav.navbar-shrink {
     padding-top: 0;
     padding-bottom: 0;
-    background-color: #212529;
+    background-color: rgb(212, 212, 44);
   }
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.25em;
@@ -696,4 +697,10 @@ ul.social-buttons li a {
 
 ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
   background-color: #fed136;
+}
+
+
+div.carrusel-item img{
+width: 100px;
+height:100px;
 }
